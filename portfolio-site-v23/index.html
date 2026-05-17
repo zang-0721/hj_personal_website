@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>黄骏 · Portfolio</title>
+    <meta name="description" content="黄骏个人作品集网站｜AI 产品方向" />
+    <link rel="stylesheet" href="./styles.css?v=202605172043" />
+
+
+
+
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#home">HJ</a>
+      <nav>
+        <a href="#about">关于我</a>
+        <a href="#experience">项目&实习经历</a>
+        <a href="#wins">奖项&能力</a>
+        <a href="#contact">我的3D面</a>
+      </nav>
+
+      <div class="topbar-actions">
+        <a class="resume-btn resume-btn--download" href="./黄骏_PM.pdf" download="黄骏_PM.pdf">下载简历</a>
+        <span class="contact-card-wrap">
+          <button class="resume-btn" type="button" aria-label="联系我">联系我</button>
+          <img class="contact-card-preview" src="./微信名片.png" alt="微信名片" />
+        </span>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero section" id="cover-hero">
+        <img src="./封面大人物1.png" alt="首页封面" style="width: min(100%, 1120px); height: auto; display: block; margin: 200px auto 0; border-radius: 16px; box-shadow: none;" />
+      </section>
+
+      <section id="about" class="section block">
+        <h2>关于我</h2>
+        <div class="about-layout">
+          <article class="about-intro">
+            <h3>Hello I'm <span>黄骏</span> !</h3>
+            <p class="about-role">985数学硕士 / 腾讯AI产品实习生 / 爆款内容创作者</p>
+            <p>
+              1 逻辑：专业背景，赋予我拆解复杂逻辑的本能。
+            </p>
+            <p>
+              2 落地：腾讯实习，深度参与 Agent 概念验证与插件化。
+            </p>
+            <p>
+              3 闭环：创作者，探索数据背后的用户情绪，跑通"流量-变现"与"AI创作需求工具化"闭环。
+            </p>
+            
+
+          </article>
+
+          <aside class="id-badge-wrap" aria-label="个人工卡吊牌">
+            <div class="lanyard" aria-hidden="true">
+              <span class="lanyard-head"></span>
+              <span class="lanyard-line"></span>
+              <span class="lanyard-clip"></span>
+            </div>
+            <div class="id-badge">
+              <span class="badge-hole" aria-hidden="true"></span>
+              <p class="badge-title">ID Card</p>
+              <img src="./79b748a2c891785b125e83e0708eb1b1.jpg" alt="黄骏工卡照片" />
+              <h4>黄骏 · Huang Jun</h4>
+              <small>电子科技大学 · 27届硕士</small>
+            </div>
+          </aside>
+
+        </div>
+      </section>
+
+
+
+
+
+
+      <section id="experience" class="section block">
+        <h2>项目&实习经历</h2>
+
+        <div class="project-grid" id="project-grid">
+          <article class="project" data-type="ai" data-modal="research-image" data-title="内部 AI 平台场景化竞品调研" data-detail="以 RPG 剧情生成 Agent 为核心场景，统一了评测脚本、指标口径与输出模版，对内部平台及 Coze / Dify / FastGPT 做横向对比。最终沉淀了万字调研报告和 P0-P2 需求清单，推动平台侧产品优化。">
+            <div class="project-thumb project-thumb--image">
+              <img class="project-thumb-media" src="./测试封面图.png" alt="内部 AI 平台场景化竞品调研封面" />
+            </div>
+            <div class="project-body">
+              <h3>内部 AI 平台场景化竞品调研 <span class="project-note">腾讯光子work</span></h3>
+              <p>设定RPG游戏剧情生成Agent为基准用例，横向测评内部工具与Coze、Dify等行业标杆。输出全流程体验报告，并提炼 P0-P2 核心优化需求清单，为产品从0到1的迭代提供决策支撑。</p>
+            </div>
+          </article>
+
+          <article class="project project--reverse" data-type="ai" data-title="AI 播客 Agent" data-detail="搭建单/双人播客 Agent 链路，打通“内容框架 → 逐字稿 → 音频”三段式流程，并推进音频能力插件化。落地多音频拼接、格式转换、音效混合功能，单次处理耗时控制在 30 秒内。">
+            <div class="project-thumb project-thumb--image">
+              <img class="project-thumb-media" src="./播客封面.png" alt="AI 播客 Agent 封面" />
+            </div>
+            <div class="project-body">
+              <h3>游戏场景下的AI 播客 Agent <span class="project-note">腾讯光子work</span></h3>
+              <p>搭建单/双人播客AI Agent，为内部平台实现产品化打样：针对长文本生成与TTS处理瓶颈，设计“大纲-逐字稿-音频”三段式生成链路；利用Few-shot等策略实现多角色对话逻辑对齐；封装云端音频处理能力为内部平台原生插件，实现音频的复杂处理。</p>
+            </div>
+          </article>
+
+          <article class="project" data-type="media" data-modal="media" data-title="泛学术内容矩阵" data-detail="独立主理泛学术账号，围绕学习方法、竞赛经验、成长策略持续迭代内容选题与脚本表达。累计产出 160+ 期内容，沉淀 2.8w 粉丝，获赞 45w+，单条播放 120w+，形成稳定增长和转化闭环。">
+            <div class="project-thumb project-thumb--image">
+              <img class="project-thumb-media" src="./内容矩阵封面2.jpg" alt="泛学术内容矩阵封面" />
+            </div>
+            <div class="project-body">
+              <h3>泛学术内容矩阵 <span class="project-note">独立Builder</span></h3>
+              <p>独立操盘校园泛学术内容矩阵，累计产出160+期视频，斩获3w+高粘性粉丝（单视频最高120w+播放），成功跑通知识付费商业闭环; 针对创作痛点，联合开发AI创作工具（Web端MVP测试中）。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+
+      <section id="wins" class="section block awards-skills-section">
+        <h2>奖项&技能</h2>
+
+        <div class="awards-skills-grid" aria-label="奖项与技能展示网格">
+          <button class="honor-flip-card" type="button" aria-label="国家奖学金，点击翻转查看荣誉图">
+            <span class="honor-flip-card__inner">
+              <span class="honor-flip-card__face honor-flip-card__face--front">
+                <span class="honor-year">2022/2023</span>
+                <strong>国家奖学金</strong>
+                <small>National Scholarship</small>
+              </span>
+              <span class="honor-flip-card__face honor-flip-card__face--back">
+                <img src="./荣誉3.jpg" alt="荣誉3" />
+              </span>
+            </span>
+          </button>
+
+          <button class="honor-flip-card" type="button" aria-label="四川省优秀毕业生，点击翻转查看荣誉图">
+            <span class="honor-flip-card__inner">
+              <span class="honor-flip-card__face honor-flip-card__face--front">
+                <span class="honor-year">2024</span>
+                <strong>四川省优秀毕业生</strong>
+                <small>Outstanding Graduate</small>
+              </span>
+              <span class="honor-flip-card__face honor-flip-card__face--back">
+                <img src="./荣誉6.jpg" alt="荣誉6" />
+              </span>
+            </span>
+          </button>
+
+          <button class="honor-flip-card" type="button" aria-label="中国研究生数学建模竞赛国家级三等奖，点击翻转查看荣誉图">
+            <span class="honor-flip-card__inner">
+              <span class="honor-flip-card__face honor-flip-card__face--front">
+                <span class="honor-year">2024</span>
+                <strong>中国研究生数学建模竞赛</strong>
+                <small>国家级三等奖</small>
+              </span>
+              <span class="honor-flip-card__face honor-flip-card__face--back">
+                <img src="./荣誉5.jpg" alt="荣誉5" />
+              </span>
+            </span>
+          </button>
+
+          <button class="honor-flip-card" type="button" aria-label="软件和信息专业人才大赛省级二等奖，点击翻转查看荣誉图">
+            <span class="honor-flip-card__inner">
+              <span class="honor-flip-card__face honor-flip-card__face--front">
+                <span class="honor-year">2025/2026</span>
+                <strong>软件和信息专业人才大赛</strong>
+                <small>省级二等奖</small>
+              </span>
+              <span class="honor-flip-card__face honor-flip-card__face--back">
+                <img src="./荣誉4.jpg" alt="荣誉4" />
+              </span>
+            </span>
+          </button>
+
+          <button class="honor-flip-card" type="button" aria-label="电子科技大学一等奖学金，点击翻转查看荣誉图">
+            <span class="honor-flip-card__inner">
+              <span class="honor-flip-card__face honor-flip-card__face--front">
+                <span class="honor-year">2025</span>
+                <strong>电子科技大学一等奖学金</strong>
+                <small>Academic Excellence Award</small>
+              </span>
+              <span class="honor-flip-card__face honor-flip-card__face--back">
+                <img src="./荣誉2.jpg" alt="荣誉2" />
+              </span>
+            </span>
+          </button>
+
+          <button class="honor-flip-card" type="button" aria-label="优秀研究生，点击翻转查看荣誉图">
+            <span class="honor-flip-card__inner">
+              <span class="honor-flip-card__face honor-flip-card__face--front">
+                <span class="honor-year">2025</span>
+                <strong>优秀研究生</strong>
+                <small>Outstanding Postgraduate</small>
+              </span>
+              <span class="honor-flip-card__face honor-flip-card__face--back">
+                <img src="./荣誉1.jpg" alt="荣誉1" />
+              </span>
+            </span>
+          </button>
+
+
+          <article class="skill-image-card"><img src="./技能1.jpg" alt="技能1" /></article>
+          <article class="skill-image-card"><img src="./技能2.jpg" alt="技能2" /></article>
+          <article class="skill-image-card"><img src="./技能3.jpg" alt="技能3" /></article>
+          <article class="skill-image-card"><img src="./技能4.jpg" alt="技能4" /></article>
+          <article class="skill-image-card"><img src="./技能5.jpg" alt="技能5" /></article>
+          <article class="skill-image-card"><img src="./技能6.jpg" alt="技能6" /></article>
+        </div>
+      </section>
+
+
+      <div class="project-modal" id="project-modal" aria-hidden="true">
+
+        <div class="project-modal__mask" data-close="modal"></div>
+        <div class="project-modal__card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+          <button class="project-modal__close" id="modal-close" aria-label="关闭">×</button>
+          <h3 id="modal-title">项目介绍</h3>
+          <div id="modal-content"></div>
+        </div>
+      </div>
+
+      <template id="research-modal-template">
+        <div class="research-sliced-card">
+          <section class="research-slice research-slice--hero research-slice--left">
+            <div class="research-slice__content">
+              <h5>1. 评测方案设计</h5>
+              <p>以“RPG 游戏剧情”为用例，压测工作流编排全链路。</p>
+            </div>
+          </section>
+
+          <section class="research-slice research-slice--goal research-slice--right">
+            <div class="research-slice__content">
+              <h5>2. 多维度横向对标</h5>
+              <p><strong>对象：</strong>深度对比 Coze、Dify、FastGPT，寻找功能与体验差距。</p>
+              <ul>
+                <li><strong>[逻辑编排]</strong>：评估复杂分支判断的灵活性与多路变量引用逻辑。</li>
+                <li><strong>[RAG 检索]</strong>：测评知识库分块策略、检索准确性及独立调试能力。</li>
+                <li><strong>[易用交互]</strong>：对比画布操作效率、插件鉴权机制及报错提示友好度。</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="research-slice research-slice--compare research-slice--left">
+            <div class="research-slice__content">
+              <h5>3. 核心痛点发现</h5>
+              <p>通过 30+ 节点全链路搭建，提炼出平台当前阶段的三个改进方向：</p>
+              <ul>
+                <li><strong>[编排限制]</strong>：如 LLM 节点引用受限、全局变量读写机制不完善。</li>
+                <li><strong>[交互门槛]</strong>：如连线逻辑不可重连、插件参数无法预览（黑盒现象）。</li>
+                <li><strong>[生态集成]</strong>：需进一步打通腾讯内部办公工具，降低员工上手难度。</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="research-slice research-slice--result research-slice--right">
+            <div class="research-slice__content">
+              <h5>4. 优化建议与排期</h5>
+              <p><strong>产出：</strong>输出万字深度报告，并提炼可落地的产品 Backlog。</p>
+              <ul>
+                <li><strong>[优先级排定]</strong>：按业务价值排定 P0-P2 优化清单，覆盖变量、模型、插件。</li>
+                <li><strong>[迭代支持]</strong>：提供具体优化方案（如：引入变量赋值节点、升级输入组件）。</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </template>
+
+      <template id="podcast-modal-template">
+        <div class="podcast-modal-body">
+          <p class="podcast-subtitle">内部智能体与TTS平台落地验证 | 工作流编排 | TTS音频工程优化 | 平台原生插件化</p>
+
+          <div class="podcast-visual-box">
+            <button type="button" class="podcast-arrow" data-dir="prev">&lt;</button>
+            <div class="podcast-visual-placeholder">
+              <img class="podcast-visual-image" src="./播客工作流.png" alt="AI播客演示图" />
+              <p class="podcast-visual-caption">播客工作流</p>
+            </div>
+            <button type="button" class="podcast-arrow" data-dir="next">&gt;</button>
+          </div>
+
+
+          <section class="podcast-section podcast-action-section">
+            <h4>🔴 项目的问与答</h4>
+            <p>设计并搭建单/双AI播客Agent，完成内部智能体平台和TTS工具能力的场景化包装与产品化落地，转化为平台首页的“播客制作”“电台生成”等核心功能模块，直接赋能业务端用户。</p>
+            <ol class="podcast-action-list">
+              <li class="podcast-action-item">
+                <h5>LLM 生成瓶颈</h5>
+                <p><strong>[挑战]</strong> 长篇双人对谈逻辑易崩、人设易混淆。</p>
+                <p><strong>[解法]</strong> 设计三段式生成链路，应用 Few-shot 与反向 Prompt 约束等策略实现对话逻辑。</p>
+              </li>
+              <li class="podcast-action-item">
+                <h5>TTS 与混音工程瓶颈</h5>
+                <p><strong>[挑战]</strong> 长音频转语音易失败，且单一人声缺乏游戏沉浸感。</p>
+                <p><strong>[解法]</strong> 采用“语义 + 长度”策略切分文本，并行使用TTS；在云端挂载Python脚本供工作流调用， 满足音频合并、添加音效等复杂需求。</p>
+              </li>
+              <li class="podcast-action-item">
+                <h5>内部平台使用门槛</h5>
+                <p><strong>[挑战]</strong> 业务端非技术人员配置云函数较为困难。</p>
+                <p><strong>[解法]</strong> 梳理底层逻辑 SOP，成功推动其沉淀为平台原生音频处理插件。</p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="podcast-section">
+            <h4>🟢 项目成果 </h4>
+            <div class="podcast-result-grid">
+              <article><h5>成功交付 Showcase</h5><p>交付完整交互式电台 API</p></article>
+              <article><h5>平台能力升级</h5><p>沉淀3个高频音频插件</p></article>
+              <article><h5>音频处理提效</h5><p>单次耗时缩减至 30s 内</p></article>
+            </div>
+          </section>
+
+          <section class="podcast-section">
+            
+            <div class="podcast-showcase-grid">
+              <article class="podcast-showcase-card">
+                <h5>交互式前端演示</h5>
+                <div class="podcast-video-frame">
+                  <video class="podcast-demo-video" controls preload="metadata" src="./播客录频1.mp4"></video>
+                </div>
+                <p>(前端调用Agent工作流API生成AI播客演示)</p>
+              </article>
+
+              <article class="podcast-showcase-card">
+                <h5>场景音频试听</h5>
+                <div class="podcast-audio-list">
+                  <div class="podcast-audio-item">
+                    <div class="podcast-audio-head">
+                      <h6>双人播客</h6>
+                      <div class="podcast-audio-meta">
+                        <p>游戏公告轻解读</p>
+                        <span class="podcast-audio-badge">对谈</span>
+                      </div>
+                    </div>
+                    <div class="podcast-audio-frame">
+                      <audio class="podcast-audio-player" controls preload="metadata" src="./双人播客.mp3"></audio>
+                    </div>
+                  </div>
+
+                  <div class="podcast-audio-item">
+                    <div class="podcast-audio-head">
+                      <h6>单人播客</h6>
+                      <div class="podcast-audio-meta">
+                        <p>沉浸式故事独白</p>
+                        <span class="podcast-audio-badge">独白</span>
+                      </div>
+                    </div>
+                    <div class="podcast-audio-frame">
+                      <audio class="podcast-audio-player" controls preload="metadata" src="./单人播客.mp3"></audio>
+                    </div>
+                  </div>
+
+                  <div class="podcast-audio-item">
+                    <div class="podcast-audio-head">
+                      <h6>突发新闻</h6>
+                      <div class="podcast-audio-meta">
+                        <p>堵车公告</p>
+                        <span class="podcast-audio-badge">混音</span>
+                      </div>
+                    </div>
+                    <div class="podcast-audio-frame">
+                      <audio class="podcast-audio-player" controls preload="metadata" src="./堵车.mp3"></audio>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+        </div>
+      </template>
+
+      <template id="media-modal-template">
+        <div class="media-shot-modal">
+          <img class="media-shot-bg" src="./泛学术作品.png" alt="泛学术内容矩阵展示图" />
+          <div class="media-shot-strip" aria-label="泛学术内容矩阵顶部多媒体位">
+            <figure class="media-shot-item">
+              <video controls preload="metadata" playsinline src="./抖音主页.mp4"></video>
+            </figure>
+            <figure class="media-shot-item media-growth-slot">
+              <button class="media-growth-viewer" type="button" aria-label="点击放大增长图片">
+                <img data-growth-image src="./增长3.jpg" alt="增长3" />
+              </button>
+            </figure>
+            <figure class="media-shot-item media-assistant-slot">
+              <button class="media-assistant-viewer" type="button" aria-label="点击放大助手图片">
+                <img data-assistant-image src="./助手1.png" alt="助手1" />
+              </button>
+            </figure>
+          </div>
+
+          <div class="media-growth-lightbox" hidden>
+            <button class="media-growth-lightbox__close" type="button" data-growth-close aria-label="关闭放大图">×</button>
+            <button class="media-growth-lightbox__nav media-growth-lightbox__nav--prev" type="button" data-growth-prev aria-label="上一张">‹</button>
+            <img class="media-growth-lightbox__img" alt="图片放大预览" />
+            <button class="media-growth-lightbox__nav media-growth-lightbox__nav--next" type="button" data-growth-next aria-label="下一张">›</button>
+          </div>
+
+          <div class="media-shot-links" aria-label="泛学术内容矩阵外链">
+            <a href="https://v.douyin.com/n0xsqX6YEjU/" target="_blank" rel="noopener noreferrer" aria-label="打开抖音主页">
+              <img src="./抖音.png" alt="抖音" />
+            </a>
+            <a href="https://xhslink.com/m/5Q1QlSlLo0P" target="_blank" rel="noopener noreferrer" aria-label="打开小红书主页">
+              <img src="./小红书.png" alt="小红书" />
+            </a>
+          </div>
+
+        </div>
+
+      </template>
+
+      <template id="research-image-modal-template">
+        <div class="research-image-modal">
+          <button class="research-image-modal__close" type="button" data-close="modal" aria-label="关闭">×</button>
+          <img class="research-image-modal__base" src="./竞品调研.png" alt="场景化竞品调研原图" />
+
+          <div class="research-shot-strip" aria-label="场景化竞品调研顶部三槽位">
+            <figure class="research-shot-item research-shot-item--carousel">
+              <button class="media-growth-viewer research-overlay-viewer" type="button" aria-label="查看竞品轮播原图">
+                <img data-research-overlay-image src="./竞1.png" alt="竞品补充图1" />
+              </button>
+            </figure>
+            <figure class="research-shot-item">
+              <img src="./竞4.png" alt="竞品补充图4" />
+            </figure>
+            <figure class="research-shot-item">
+              <img src="./竞5.png" alt="竞品补充图5" />
+            </figure>
+          </div>
+
+          <div class="media-growth-lightbox" hidden>
+            <button class="media-growth-lightbox__close" type="button" data-research-close aria-label="关闭放大图">×</button>
+            <button class="media-growth-lightbox__nav media-growth-lightbox__nav--prev" type="button" data-research-prev aria-label="上一张">‹</button>
+            <img class="media-growth-lightbox__img" alt="竞品轮播放大预览" />
+            <button class="media-growth-lightbox__nav media-growth-lightbox__nav--next" type="button" data-research-next aria-label="下一张">›</button>
+          </div>
+        </div>
+      </template>
+
+      <section id="contact" class="section block contact">
+        <h2>我的3D面</h2>
+        <div class="cube-3d-layout">
+          <article class="cube-item cube-item--real">
+            <div class="cube-scene" id="sports-cube-scene" aria-label="可拖拽旋转的运动照片魔方">
+              <div class="cube-3d" id="sports-cube">
+                <figure class="cube-face cube-face--front"><img src="./运动1.jpg" alt="运动照片1" /></figure>
+                <figure class="cube-face cube-face--back"><img src="./运动2.jpg" alt="运动照片2" /></figure>
+                <figure class="cube-face cube-face--right"><img src="./运动3.jpg" alt="运动照片3" /></figure>
+                <figure class="cube-face cube-face--left"><img src="./运动4.jpg" alt="运动照片4" /></figure>
+                <figure class="cube-face cube-face--top"><img src="./运动5.jpg" alt="运动照片5" /></figure>
+                <figure class="cube-face cube-face--bottom"><img src="./运动6.jpg" alt="运动照片6" /></figure>
+              </div>
+            </div>
+            <p class="cube-item-slogan"><strong>🏃‍♂️ 运动：保持皮实</strong>“每周固定几次训练。<br />保持体能，也是在磨耐心。做产品需要长期主义。”</p>
+          </article>
+
+          <article class="cube-item cube-item--real">
+            <div class="cube-scene" id="podcast-cube-scene" aria-label="可拖拽旋转的播客照片魔方">
+              <div class="cube-3d" id="podcast-cube">
+                <figure class="cube-face cube-face--front"><img src="./播客1.jpg" alt="播客照片1" /></figure>
+                <figure class="cube-face cube-face--back"><img src="./播客2.jpg" alt="播客照片2" /></figure>
+                <figure class="cube-face cube-face--right"><img src="./播客3.jpg" alt="播客照片3" /></figure>
+                <figure class="cube-face cube-face--left"><img src="./播客4.jpg" alt="播客照片4" /></figure>
+                <figure class="cube-face cube-face--top"><img src="./播客5.jpg" alt="播客照片5" /></figure>
+                <figure class="cube-face cube-face--bottom"><img src="./播客6.jpg" alt="播客照片6" /></figure>
+              </div>
+            </div>
+            <p class="cube-item-slogan"><strong>🎧 播客：信息摄入</strong>“通勤和碎片时间都在听。<br />听 AI 趋势和商业逻辑，说不定能少走弯路。”</p>
+          </article>
+
+          <article class="cube-item cube-item--real">
+
+            <div class="cube-scene" id="travel-cube-scene" aria-label="可拖拽旋转的旅行照片魔方">
+              <div class="cube-3d" id="travel-cube">
+                <figure class="cube-face cube-face--front"><img src="./旅行1.jpg" alt="旅行照片1" /></figure>
+                <figure class="cube-face cube-face--back"><img src="./旅行2.jpg" alt="旅行照片2" /></figure>
+                <figure class="cube-face cube-face--right"><img src="./旅行3.jpg" alt="旅行照片3" /></figure>
+                <figure class="cube-face cube-face--left"><img src="./旅行4.jpg" alt="旅行照片4" /></figure>
+                <figure class="cube-face cube-face--top"><img src="./旅行5.jpg" alt="旅行照片5" /></figure>
+                <figure class="cube-face cube-face--bottom"><img src="./旅行6.jpg" alt="旅行照片6" /></figure>
+              </div>
+            </div>
+            <p class="cube-item-slogan"><strong>🌍 旅行：换个脑子</strong>“定期离开屏幕去外面转转。<br />换个环境换个视角，很多在工位上想不通的问题，走着走着就通了。”</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">© 2026 Huang Jun · Portfolio</footer>
+    <script src="./script.research.js?v=202605171739"></script>
+  </body>
+</html>
