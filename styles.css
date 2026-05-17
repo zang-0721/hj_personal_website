@@ -847,8 +847,48 @@ main {
   grid-template-columns: minmax(180px, 28%) 1fr;
   gap: 6px;
   padding: 12px 8px 8px;
+  overflow: hidden;
+  isolation: isolate;
 }
 
+#experience .project::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 29, 45, 0.46);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 220ms ease;
+  z-index: 2;
+}
+
+#experience .project::after {
+  content: "点击查看";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -42%);
+  color: #fff;
+  font-size: clamp(24px, 2.6vw, 44px);
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 220ms ease, transform 220ms ease;
+  z-index: 3;
+}
+
+#experience .project:hover::before,
+#experience .project:focus-within::before {
+  opacity: 1;
+}
+
+#experience .project:hover::after,
+#experience .project:focus-within::after {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
 
 #experience .project--reverse {
   grid-template-columns: 1fr minmax(180px, 28%);
