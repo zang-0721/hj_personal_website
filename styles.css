@@ -806,6 +806,41 @@ main {
   padding: 0;
 }
 
+/* Keep the two character-led internship covers compact and gently animated. */
+.project--baidu .project-thumb--baidu,
+.project--penguin .project-thumb--image {
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: transparent;
+}
+
+.project--baidu .project-thumb-media,
+.project--penguin .project-thumb-media {
+  width: 60%;
+  height: 60%;
+  min-height: 0;
+  object-fit: contain;
+  transform-origin: center center;
+  animation: experience-cover-sway 5.5s ease-in-out infinite;
+}
+
+.project--penguin .project-thumb-media {
+  animation-delay: -1.3s;
+}
+
+@keyframes experience-cover-sway {
+  0%, 100% { transform: rotate(-1deg) translateY(0); }
+  50% { transform: rotate(1deg) translateY(-3px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project--baidu .project-thumb-media,
+  .project--penguin .project-thumb-media {
+    animation: none;
+  }
+}
+
 .project-thumb-media {
   width: 100%;
   height: 100%;
@@ -918,7 +953,231 @@ main {
   font-size: 0.54em;
 }
 
+#experience .project--baidu .project-thumb-media,
+#experience .project--penguin .project-thumb-media {
+  width: 60%;
+  height: 60%;
+  min-height: 0;
+}
 
+.project-modal.baidu-mode .project-modal__card {
+  width: min(1080px, calc(100% - 28px));
+  padding: 14px;
+  background: #eef3f7;
+  border-color: #d8e0e8;
+  border-radius: 22px;
+}
+
+.project-modal.baidu-mode .project-modal__card > h3 {
+  display: none;
+}
+
+.project-modal.baidu-mode #modal-content {
+  color: #253142;
+  line-height: 1.55;
+}
+
+.baidu-modal-body {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.baidu-bento-card,
+.baidu-modal-hero {
+  border: 1px solid rgba(31, 53, 111, 0.1);
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 8px 18px rgba(31, 53, 111, 0.05);
+}
+
+.baidu-modal-hero {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px;
+  background: #17336f;
+  color: #fff;
+}
+
+.baidu-kicker {
+  color: #a9c6ff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.baidu-role { margin: 10px 0 0; color: #dbe7ff; font-size: 14px; }
+.baidu-lead { max-width: 650px; margin: 14px 0 0; font-size: clamp(19px, 2.2vw, 28px); font-weight: 750; line-height: 1.25; }
+.baidu-hero-mark { flex: 0 0 auto; align-self: center; color: #8fb5ff; font-size: 34px; font-weight: 900; line-height: .9; text-align: right; }
+.baidu-hero-mark span { font-size: 10px; letter-spacing: .14em; }
+.baidu-stat-grid { grid-column: 1 / -1; display: grid; grid-template-columns: 1.3fr repeat(3, 1fr); gap: 10px; }
+.baidu-stat-card { padding: 18px; }
+.baidu-stat-card strong { display: block; color: #163778; font-size: clamp(28px, 3.5vw, 44px); line-height: 1; }
+.baidu-stat-card strong span { color: #3d82e6; font-size: .55em; }
+.baidu-stat-card p { margin: 9px 0 0; color: #65748b; font-size: 13px; }
+.baidu-flow-card { grid-column: 1 / -1; padding: 18px; }
+.baidu-section-heading { display: flex; align-items: center; gap: 9px; }
+.baidu-section-heading span { color: #3d82e6; font: 800 12px/1 Arial, sans-serif; }
+.baidu-section-heading h4 { margin: 0; color: #1b315f; font-size: 17px; }
+.baidu-flow { display: flex; align-items: stretch; gap: 6px; margin-top: 16px; }
+.baidu-flow > div { flex: 1; min-width: 0; padding: 12px 8px; border-radius: 10px; background: #edf4ff; }
+.baidu-flow b, .baidu-flow small { display: block; }
+.baidu-flow b { color: #1f4f9d; font-size: 13px; }
+.baidu-flow small { margin-top: 5px; color: #71819a; font-size: 11px; }
+.baidu-flow i { align-self: center; color: #6997d6; font-style: normal; }
+.baidu-detail-grid { grid-column: 1 / -1; display: grid; grid-template-columns: 1.1fr .9fr; gap: 10px; }
+.baidu-detail-card { padding: 18px; }
+.baidu-detail-card ul { margin: 13px 0 0; padding-left: 18px; color: #56667c; font-size: 13px; }
+.baidu-detail-card li + li { margin-top: 8px; }
+.baidu-detail-card p, .baidu-insight-card p { margin: 13px 0 0; color: #56667c; font-size: 13px; }
+.baidu-detail-card--accent { background: #e8f2ff; }
+.baidu-tag-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
+.baidu-tag-list span { padding: 5px 8px; border-radius: 6px; background: #fff; color: #2c65b4; font-size: 11px; font-weight: 700; }
+.baidu-insight-card { grid-column: 1 / -1; padding: 18px; background: #fffdf7; }
+
+.project-modal.baidu-mode .project-modal__card {
+  width: min(1040px, calc(100% - 32px));
+  max-height: calc(100vh - 48px);
+  padding: 16px;
+  background: #f7f6f2;
+  border: 0;
+  border-radius: 12px;
+}
+
+.project-modal.baidu-mode .project-modal__card > h3 {
+  display: block;
+  margin: 2px 48px 16px 4px;
+  color: #202124;
+  font-size: clamp(22px, 2.5vw, 32px);
+  letter-spacing: 0;
+}
+
+.project-modal.baidu-mode #modal-content {
+  color: #252525;
+  line-height: 1.55;
+}
+
+.project-modal.baidu-mode .baidu-modal-body {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.project-modal.baidu-mode .baidu-bento-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #e7e4df;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: none;
+}
+
+.project-modal.baidu-mode .baidu-case-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-modal.baidu-mode .baidu-case-visual {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 190px;
+  aspect-ratio: 1.55 / 1;
+  overflow: hidden;
+  background: #f0efeb;
+  color: #aaa8a2;
+}
+
+.project-modal.baidu-mode .baidu-case-visual::before,
+.project-modal.baidu-mode .baidu-case-visual::after {
+  content: "";
+  position: absolute;
+  border: 1px dashed #d5d2cb;
+  opacity: .8;
+}
+
+.project-modal.baidu-mode .baidu-case-visual::before {
+  width: 42%;
+  height: 54%;
+  transform: rotate(-11deg) skewY(8deg);
+}
+
+.project-modal.baidu-mode .baidu-case-visual::after {
+  width: 26%;
+  height: 34%;
+  transform: translate(22px, 17px) rotate(-11deg) skewY(8deg);
+}
+
+.project-modal.baidu-mode .baidu-case-visual span {
+  position: relative;
+  z-index: 1;
+  padding: 5px 8px;
+  border: 1px solid #dedbd5;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, .78);
+  color: #9d9a92;
+  font: 700 9px/1 Arial, sans-serif;
+  letter-spacing: .08em;
+}
+
+.project-modal.baidu-mode .baidu-case-visual img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.project-modal.baidu-mode .baidu-case-copy {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 17px 18px 19px;
+}
+
+.project-modal.baidu-mode .baidu-case-index {
+  color: #8a8882;
+  font: 700 10px/1.2 Arial, sans-serif;
+  letter-spacing: .1em;
+}
+
+.project-modal.baidu-mode .baidu-case-copy h4 {
+  margin: 11px 0 0;
+  color: #202124;
+  font-size: clamp(18px, 1.8vw, 24px);
+  line-height: 1.25;
+}
+
+.project-modal.baidu-mode .baidu-case-copy p {
+  margin: 12px 0 0;
+  color: #73716d;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+@media (max-width: 680px) {
+  .project-modal.baidu-mode .project-modal__card {
+    width: min(620px, calc(100% - 16px));
+    max-height: calc(100vh - 20px);
+    padding: 10px;
+  }
+
+  .project-modal.baidu-mode .project-modal__card > h3 {
+    margin: 2px 42px 12px 2px;
+    font-size: 22px;
+  }
+
+  .project-modal.baidu-mode .baidu-modal-body {
+    grid-template-columns: 1fr;
+  }
+
+  .project-modal.baidu-mode .baidu-case-visual {
+    min-height: 150px;
+  }
+}
 
 .project-modal {
   position: fixed;
@@ -2155,6 +2414,48 @@ main {
 
   .podcast-arrow {
     display: none;
+  }
+
+  .project-modal.baidu-mode .project-modal__card {
+    width: min(680px, calc(100% - 16px));
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 16px;
+  }
+
+  .baidu-modal-body {
+    grid-template-columns: 1fr;
+  }
+
+  .baidu-modal-hero {
+    display: block;
+    padding: 18px;
+  }
+
+  .baidu-hero-mark {
+    display: none;
+  }
+
+  .baidu-stat-grid,
+  .baidu-detail-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .baidu-stat-card--large {
+    grid-column: span 2;
+  }
+
+  .baidu-flow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .baidu-flow i {
+    display: none;
+  }
+
+  .baidu-detail-grid {
+    grid-column: 1;
   }
 }
 

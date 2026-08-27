@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>黄骏 · Portfolio</title>
     <meta name="description" content="黄骏个人作品集网站｜AI 产品方向" />
-    <link rel="stylesheet" href="./styles.css?v=202605172158" />
+    <link rel="stylesheet" href="./styles.css?v=202608271840" />
 
 
 
@@ -40,15 +40,15 @@
         <div class="about-layout">
           <article class="about-intro">
             <h3>Hello I'm <span>黄骏</span> !</h3>
-            <p class="about-role">985数学硕士 / 腾讯AI产品实习生 / 爆款内容创作者</p>
+            <p class="about-role">985数学硕士 / 腾讯、百度AI产品实习生 / 爆款内容创作者</p>
             <p>
-              1 逻辑：专业背景，赋予我拆解复杂逻辑的本能。
+              1 解构：专业背景，沉淀严谨的数据洞察能力，驱动大模型评测与数据飞轮自动化。
             </p>
             <p>
-              2 落地：腾讯实习，深度参与 Agent 概念验证与插件化。
+              2 落地：深度参与腾讯、百度实习工作，擅长工作流编排与 24h MVP快速验证概念验证。
             </p>
             <p>
-              3 闭环：创作者，探索数据背后的用户情绪，跑通"流量-变现"与"AI创作需求工具化"闭环。
+              3 闭环：创作者视角，挖掘用户真实需求，用数据指导内容迭代，搭建AI Agent赋能生产。
             </p>
             
 
@@ -81,19 +81,19 @@
         <h2>项目&实习经历</h2>
 
         <div class="project-grid" id="project-grid">
-          <article class="project" data-type="ai" data-modal="research-image" data-title="内部 AI 平台场景化竞品调研" data-detail="以 RPG 剧情生成 Agent 为核心场景，统一了评测脚本、指标口径与输出模版，对内部平台及 Coze / Dify / FastGPT 做横向对比。最终沉淀了万字调研报告和 P0-P2 需求清单，推动平台侧产品优化。">
-            <div class="project-thumb project-thumb--image">
-              <img class="project-thumb-media" src="./测试封面图.png" alt="内部 AI 平台场景化竞品调研封面" />
+          <article class="project project--baidu" data-type="ai" data-modal="baidu" data-title="大模型算法迭代与数据飞轮自动化" data-detail="围绕 20 万+真实业务语料，建立从评测集构建、ABX 盲测、Badcase 归因到算法反馈的标准化链路。">
+            <div class="project-thumb project-thumb--image project-thumb--baidu">
+              <img class="project-thumb-media" src="./熊掌.png" alt="大模型算法迭代与数据飞轮自动化封面" />
             </div>
             <div class="project-body">
-              <h3>内部 AI 平台场景化竞品调研 <span class="project-note">腾讯光子work</span></h3>
-              <p>设定RPG游戏剧情生成Agent为基准用例，横向测评内部工具与Coze、Dify等行业标杆。输出全流程体验报告，并提炼 P0-P2 核心优化需求清单，为产品从0到1的迭代提供决策支撑。</p>
+              <h3>大模型算法迭代与数据飞轮自动化 <span class="project-note">百度实习</span></h3>
+              <p>围绕20万+真实业务语料，设计评测集策略与细粒度归因体系，推动“线上数据-自动评测-Badcase反哺算法”链路产品化，测试集生产由天级降至小时级。</p>
             </div>
           </article>
 
-          <article class="project project--reverse" data-type="ai" data-title="AI 播客 Agent" data-detail="搭建单/双人播客 Agent 链路，打通“内容框架 → 逐字稿 → 音频”三段式流程，并推进音频能力插件化。落地多音频拼接、格式转换、音效混合功能，单次处理耗时控制在 30 秒内。">
+          <article class="project project--reverse project--penguin" data-type="ai" data-title="AI 播客 Agent" data-detail="搭建单/双人播客 Agent 链路，打通“内容框架 → 逐字稿 → 音频”三段式流程，并推进音频能力插件化。落地多音频拼接、格式转换、音效混合功能，单次处理耗时控制在 30 秒内。">
             <div class="project-thumb project-thumb--image">
-              <img class="project-thumb-media" src="./播客封面.png" alt="AI 播客 Agent 封面" />
+              <img class="project-thumb-media" src="./企鹅.jpg" alt="AI 播客 Agent 封面" />
             </div>
             <div class="project-body">
               <h3>游戏场景下的AI 播客 Agent <span class="project-note">腾讯光子work</span></h3>
@@ -260,6 +260,46 @@
               </ul>
             </div>
           </section>
+        </div>
+      </template>
+
+      <template id="baidu-modal-template">
+        <div class="baidu-modal-body">
+          <article class="baidu-bento-card baidu-case-card">
+            <div class="baidu-case-visual" aria-label="数据分析图"><img src="./数据分析图.svg" alt="数据分析图" /></div>
+            <div class="baidu-case-copy">
+              <span class="baidu-case-index">01 / EVALUATION</span>
+              <h4>构建 3 维分层抽样评测集，分布偏差 ≤3.1%</h4>
+              <p>针对 20 万+真实业务语料展开深度分析，抽象定义 7 类意图标准；基于“意图-场景-情感”设计会话级分层抽样策略，实现高置信度模型效果评估。</p>
+            </div>
+          </article>
+
+          <article class="baidu-bento-card baidu-case-card">
+            <div class="baidu-case-visual" aria-label="TTS 语音评测体系"><img src="./TTS语音评测体系_简历版.png" alt="TTS 语音评测体系" /></div>
+            <div class="baidu-case-copy">
+              <span class="baidu-case-index">02 / OPTIMIZATION</span>
+              <h4>主导 ABX 盲测与归因评测，负向反馈率下降 5%</h4>
+              <p>将主观体感拆解为细粒度、可量化的归因标签体系；主导多轮 Badcase 评测并推进排期，协同算法团队完成车载精专模型的定向微调。</p>
+            </div>
+          </article>
+
+          <article class="baidu-bento-card baidu-case-card">
+            <div class="baidu-case-visual" aria-label="车载多情感 TTS 测试集构建链路与数据飞轮"><img src="./车载多情感TTS测试集构建链路_数据飞轮.png" alt="车载多情感 TTS 测试集构建链路与数据飞轮" /></div>
+            <div class="baidu-case-copy">
+              <span class="baidu-case-index">03 / AUTOMATION</span>
+              <h4>跑通自动化数据飞轮，释放 90% 重复性工作</h4>
+              <p>抽象测试集构建全链路为标准化数据管道，封装为可复用的自动化 Skill 工具与 SOP，将测试集生产周期从“天级”极速压缩至“小时级”。</p>
+            </div>
+          </article>
+
+          <article class="baidu-bento-card baidu-case-card">
+            <div class="baidu-case-visual" aria-label="TTS 调研能力思维导图"><img src="./TTS调研能力思维导图.png" alt="TTS 调研能力思维导图" /></div>
+            <div class="baidu-case-copy">
+              <span class="baidu-case-index">04 / PRODUCT STRATEGY</span>
+              <h4>方言语音合成竞品调研，2 条建议被纳入规划</h4>
+              <p>建立包含功能架构、交互体验、应用场景的 AI 竞品调研框架；输出专项评估报告与落地建议，直接驱动业务后续的产品迭代决策。</p>
+            </div>
+          </article>
         </div>
       </template>
 
@@ -485,6 +525,6 @@
     </main>
 
     <footer class="footer">© 2026 Huang Jun · Portfolio</footer>
-    <script src="./script.research.js?v=202605171739"></script>
+    <script src="./script.research.js?v=202608262015"></script>
   </body>
 </html>

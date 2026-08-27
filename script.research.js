@@ -27,6 +27,7 @@ const modalTitle = document.getElementById('modal-title');
 const modalContent = document.getElementById('modal-content');
 const modalClose = document.getElementById('modal-close');
 const podcastTemplate = document.getElementById('podcast-modal-template');
+const baiduTemplate = document.getElementById('baidu-modal-template');
 const researchTemplate = document.getElementById('research-modal-template');
 const mediaTemplate = document.getElementById('media-modal-template');
 const researchImageTemplate = document.getElementById('research-image-modal-template');
@@ -366,29 +367,33 @@ function openProjectModal(title, content, type) {
   stopMediaGrowthRotation();
   modalTitle.textContent = title;
 
-  if (type === 'research-image' && researchImageTemplate) {
+  if (type === 'baidu' && baiduTemplate) {
+    modalContent.innerHTML = baiduTemplate.innerHTML;
+    modal.classList.add('baidu-mode');
+    modal.classList.remove('podcast-mode', 'media-mode', 'research-image-mode');
+  } else if (type === 'research-image' && researchImageTemplate) {
     modalContent.innerHTML = researchImageTemplate.innerHTML;
     modal.classList.add('research-image-mode');
-    modal.classList.remove('podcast-mode', 'media-mode');
+    modal.classList.remove('baidu-mode', 'podcast-mode', 'media-mode');
     initResearchOverlayCarousel(modalContent);
   } else if (type === 'research' && researchTemplate) {
 
     modalContent.innerHTML = researchTemplate.innerHTML;
-    modal.classList.remove('podcast-mode', 'media-mode', 'research-image-mode');
+    modal.classList.remove('baidu-mode', 'podcast-mode', 'media-mode', 'research-image-mode');
   } else if (type === 'podcast' && podcastTemplate) {
     modalContent.innerHTML = podcastTemplate.innerHTML;
     modal.classList.add('podcast-mode');
-    modal.classList.remove('media-mode', 'research-image-mode');
+    modal.classList.remove('baidu-mode', 'media-mode', 'research-image-mode');
     initPodcastCarousel(modalContent);
   } else if (type === 'media' && mediaTemplate) {
     modalContent.innerHTML = mediaTemplate.innerHTML;
     modal.classList.add('media-mode');
-    modal.classList.remove('podcast-mode', 'research-image-mode');
+    modal.classList.remove('baidu-mode', 'podcast-mode', 'research-image-mode');
     initMediaGrowth(modalContent);
     initMediaAssistant(modalContent);
   } else {
     modalContent.textContent = content;
-    modal.classList.remove('podcast-mode', 'media-mode', 'research-image-mode');
+    modal.classList.remove('baidu-mode', 'podcast-mode', 'media-mode', 'research-image-mode');
   }
 
   modal.classList.add('show');
