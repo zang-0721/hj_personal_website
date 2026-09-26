@@ -1061,8 +1061,8 @@ main {
 
 .project-modal.baidu-mode .baidu-modal-body {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
+  grid-template-columns: 1fr;
+  gap: 18px;
 }
 
 .project-modal.baidu-mode .baidu-bento-card {
@@ -1075,16 +1075,18 @@ main {
 }
 
 .project-modal.baidu-mode .baidu-case-card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
 }
 
 .project-modal.baidu-mode .baidu-case-visual {
   position: relative;
   display: grid;
   place-items: center;
-  min-height: 190px;
-  aspect-ratio: 1.55 / 1;
+  order: 2;
+  min-height: 300px;
+  aspect-ratio: auto;
   overflow: hidden;
   background: #f0efeb;
   color: #aaa8a2;
@@ -1132,27 +1134,45 @@ main {
 }
 
 .project-modal.baidu-mode .baidu-case-copy {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  padding: 17px 18px 19px;
+  display: contents;
 }
 
 .project-modal.baidu-mode .baidu-case-index {
+  order: 1;
+  padding: 18px 20px 0;
+}
+
+.project-modal.baidu-mode .baidu-case-copy h4 {
+  order: 1;
+  margin: 10px 20px 18px;
+}
+
+.project-modal.baidu-mode .baidu-case-copy p {
+  order: 3;
+  margin: 0;
+  padding: 18px 20px 22px;
+}
+
+.project-modal.baidu-mode .baidu-case-index {
+  order: 1;
+  padding: 18px 20px 0;
   color: #8a8882;
   font: 700 10px/1.2 Arial, sans-serif;
   letter-spacing: .1em;
 }
 
 .project-modal.baidu-mode .baidu-case-copy h4 {
-  margin: 11px 0 0;
+  order: 1;
+  margin: 10px 20px 18px;
   color: #202124;
   font-size: clamp(18px, 1.8vw, 24px);
   line-height: 1.25;
 }
 
 .project-modal.baidu-mode .baidu-case-copy p {
-  margin: 12px 0 0;
+  order: 3;
+  margin: 0;
+  padding: 18px 20px 22px;
   color: #73716d;
   font-size: 13px;
   line-height: 1.7;
